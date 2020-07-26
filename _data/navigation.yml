@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "Deep-Learning Paper Review"
+    url: "/dlpaper/"
+  - title: "Algorithm Review"
+    url: "/algorithm/"
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
