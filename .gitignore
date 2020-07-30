@@ -1,7 +1,7 @@
 # Vim
 *~
 *.sw[p_]
-
+/_posts/2020-07-30-18kakao_game.md
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
