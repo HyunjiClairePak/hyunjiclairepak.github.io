@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Deep-Learning Paper Review"
-    url: "/dlpaper/"
+  - title: "Deep-Learning Review"
+    url: "/dltech/"
   - title: "Algorithm Review"
     url: "/algorithm/"
   # - title: "Sample Collections"

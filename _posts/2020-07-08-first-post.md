@@ -1,14 +1,14 @@
 ---
 title: Naver Clova Paper Review - Semi-supervised Feature Level Attribute Manipulation for Fashion Image Retrieval
 categories:
-    - DL Paper
+    - DL tech
 date: 2020-07-08 01:12:58 +0900
 tags: 
     - Image Retrieval
     - Deep Learning
     - Naver Search & Clova    
 comments: true
-toc: true
+toc: False
 ---
 
 - 네이버 쇼핑 렌즈는 사용자가 관심있는 패션 아이템 사진을 촬영하면, 이를 입력으로 받아서 이와 동일한 제품을 찾아주는 네이버의 서비스.
