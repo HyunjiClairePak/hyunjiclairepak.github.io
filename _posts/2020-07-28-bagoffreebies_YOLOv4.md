@@ -11,12 +11,12 @@ toc: False
 ---
 
 Bag of Freebies 란
-========================
+=========================================================================================
 - YOLO v4 논문에 등장한 용어로
 - Object Detection 에서 네트워크 구조를 바꾸는 등의 학습 시간에 영향을 주는 것 말고,
  training strategy 나 training method 변경을 통해 정확도를 올릴 수 있는 기법들.
    
-1. data imbalance 를 해결하기 위한 기법들
+1. Data imbalance 를 해결하기 위한 기법들
     - Focal loss 사용 : 이미지에서 foreground에 비해 background영역이 많기에, 학습시 로스함수가 background에 의해 압도되는 현상을 방지하기 위해 foreground에 가중치를 주도록 설계한 modified cross entropy loss.
 2. Different categories 간에 variation을 주어서 모델의 robustness를 강화하는 기법
     - label smoothing : hard label을 soft label로 변형하여 학습에 사용하는 것.
@@ -29,6 +29,6 @@ Bag of Freebies 란
  
  
  참고 자료
- ______________________________________________________________________________
+-----------------------------------------------------------------------
  - [YOLOv4 논문](https://arxiv.org/pdf/2004.10934.pdf)
  - [Label smoothing 관련 논문](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Szegedy_Rethinking_the_Inception_CVPR_2016_paper.pdf)

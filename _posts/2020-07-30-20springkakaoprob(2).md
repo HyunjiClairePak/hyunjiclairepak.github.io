@@ -38,7 +38,7 @@ toc: False
 -  사용 언어: C++
 - 프로그래머스에서 정확도 33.3, 효율성66.7 로 100점의 점수를 얻었다. 
 <script src="https://gist.github.com/HyunjiEllenPak/0b61f95159c8898779ae061c4c336776.js"></script>
-<center><img src="../assets/images/kakao_shpping_test_result.PNG" width="200" height="200"></center>    
+<center><img src="/assets/images/kakao_shpping_test_result.PNG" width="200" height="200"></center>    
 
  
 
