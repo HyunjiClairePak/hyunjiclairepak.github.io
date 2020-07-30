@@ -1,7 +1,7 @@
 ---
-title: 카카오 20상반기 인턴 코테 문제 리뷰(2) - 보석쇼핑
+title: 카카오 20상반기 인턴 코테 풀이(2) - 보석쇼핑
 categories:
-    -algorithm
+    - algorithm
 date: 2020-07-30 22:08:00 +0900
 tags: 
     - Algorithm

@@ -1,7 +1,7 @@
 ---
-title: 카카오 20상반기 인턴 코테 문제 리뷰(1) - 키패드 누르기
+title: 카카오 20상반기 인턴 코테 풀이(1) - 키패드 누르기
 categories:
-    -algorithm
+    - algorithm
 date: 2020-07-20 23:47:00 +0900
 tags: 
     - Algorithm
