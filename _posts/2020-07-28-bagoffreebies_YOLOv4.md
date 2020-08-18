@@ -16,13 +16,17 @@ Bag of Freebies 란
  training strategy 나 training method 변경을 통해 정확도를 올릴 수 있는 기법들.
    
 1. Data imbalance 를 해결하기 위한 기법들
-    1) Focal loss 사용 : 이미지에서 foreground에 비해 background 영역이 많기에, 학습시 로스함수가 background에 의해 압도되는 현상을 방지하기 위해 foreground에 가중치를 주도록 설계한 modified cross entropy loss.
-2. Different categories 간에 variation을 주어서 모델의 robustness를 강화하는 기법 
-    1) label smoothing : one hot encoded label vector에 uniform distribution을 결합하여 smoothed label을 만듦.        
+    - Focal Loss 사용 : 이미지에서 foreground에 비해 background 영역이 많기에, 학습시 로스함수가 background에 의해 압도되는 현상을 방지하기 위해 foreground에 가중치를 주도록 설계한 modified cross entropy loss.
+    
+2. 모델의 categories 구분에 variation을 주어서 모델의 robustness를 강화하는 기법 
+    - Label Smoothing : one hot encoded label vector에 uniform distribution을 결합하여 smoothed label을 만듦.        
         - y_ls  = (1 - smooth_factor) * y_label + smooth_factor / num_class
         - smooth_factor로 label smoothing강도 조절
         - 모델이 overconfident 하는 것을 완화하므로서 calibration 과 regulazation 효과가 있음.
+        - Python Implementation
         
+         <script src="https://gist.github.com/HyunjiEllenPak/dc45cc37fcc28eaac6288fd4b3c019e2.js"></script> 
+    
         
 3. Bounding Box regression 손실 함수 변경
     - 기존에는 BB regression에서는 {x_center, y_center, w, h}값들에 대해  Mean Square Error(MSE) 또는 L1 손실함수를 사용했는데, 이 손실함수는 box scale variant 하여 모델 학습의 robustness를 떨어뜨린다. 
@@ -30,9 +34,7 @@ Bag of Freebies 란
       <center><img src="/assets/images/mse_problem.jpg" width="500" height="250"></center>
     - IoU loss가 제안됨. 
     - 이후에 IoU Loss를 개선한 Generalized IoU Loss, Complete IoU loss, Distance IoU loss 가 제안됨.
-    - Python Implementation
-    <script src="https://gist.github.com/HyunjiEllenPak/dc45cc37fcc28eaac6288fd4b3c019e2.js"></script> 
-    
+  
     
 
  
