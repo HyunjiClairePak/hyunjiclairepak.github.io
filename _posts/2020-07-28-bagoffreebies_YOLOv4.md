@@ -22,13 +22,16 @@ Bag of Freebies 란
         - y_ls  = (1 - smooth_factor) * y_label + smooth_factor / num_class
         - smooth_factor로 label smoothing강도 조절
         - 모델이 overconfident 하는 것을 완화하므로서 calibration 과 regulazation 효과가 있음.
+        
+        
 3. Bounding Box regression 손실 함수 변경
     - 기존에는 BB regression에서는 {x_center, y_center, w, h}값들에 대해  Mean Square Error(MSE) 또는 L1 손실함수를 사용했는데, 이 손실함수는 box scale variant 하여 모델 학습의 robustness를 떨어뜨린다. 
     - 예를 들어, 아래의 Fig.1을 보면 모델이 각기 다른 크기의 물체(Bounding Box)를 예측하였을 때, 박스 영역의 관점에서 (b)보다 (a)의 경우가 더 정확한 예측을 하였지만 L1 손실함수를 사용할 경우 (a)와 (b)가 손실함수에 유사한 기여를 하게 되어 잘못된 학습이 이루어질 수 있다. 
-      <center><img src="/assets/images/mse_problem.PNG" width="500" height="250"></center>
+      <center><img src="/assets/images/mse_problem.jpg" width="500" height="250"></center>
     - IoU loss가 제안됨. 
     - 이후에 IoU Loss를 개선한 Generalized IoU Loss, Complete IoU loss, Distance IoU loss 가 제안됨.
-    - Implementation using Keras 
+    - Python Implementation
+    <script src="https://gist.github.com/HyunjiEllenPak/dc45cc37fcc28eaac6288fd4b3c019e2.js"></script> 
     
     
 
