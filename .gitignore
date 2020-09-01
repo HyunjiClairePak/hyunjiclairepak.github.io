@@ -1,7 +1,7 @@
 # Vim
 *~
 *.sw[p_]
-/_posts/2020-07-30-18kakao_game.md
+
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
@@ -27,4 +27,6 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
-/_posts/2020-08-19-CalibrationPaper.md
+/_posts/2020-08-31-weakly_supervised_generative_paper.md
+/_posts/2020-08-31-EfficientDet.md
+/_posts/2020-07-30-18kakao_game.md
