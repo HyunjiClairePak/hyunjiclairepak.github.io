@@ -2,7 +2,7 @@
 title: 삼성전자 20상반기 코테 풀이(2) - 스타트 택시
 categories:
     - algorithm
-date: 2020-07-30 22:08:00 +0900
+date: 2020-09-19 00:47:00 +0900
 tags: 
     - Algorithm
     - Samsung        
