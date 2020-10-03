@@ -57,5 +57,5 @@ Fashion Image Retrieval
         > 간단하게 manipulated feature의 distribution과 real data의 distribution을 matching함에 의해서 manipulated feature를 합성함?
     - Discriminator(D):
         > color특성에 대해, 앞서 학습한 E 네트워크는 고정한 상태로, 이미지의 origin feature와 origin feature에서 color를 변경한 fake feature가 주어질 때, 이에 대한 E의 embedding을 획득하고, 이에 대한 D의 출력 embedding을 획득하여 D가 이 둘의 차를 학습하는 작업과 주어진 feature가 fake/real인지 학습하는 작업을 수행하도록 함. 
-3. 이렇게 학습한 후, 패션 아이템의 attribute를 바꾸어 이미지 검색을 하고자 할때, 예를들어 색상을 빨->초로 변경하려고 하면, 초록색에 대한 dictionary feature의 attribute와 origin feature를 generator의 입력으로 주어, manipulated feature를 획득한 후, FIR을 수행하여, 유사 패션 아이템을 찾는다. 
+3. 이렇게 학습한 후, 패션 아이템의 attribute를 바꾸어 이미지 검색을 하고자 할때, 예를들어 색상을 빨->초로 변경하려고 하면, 초록색에 대한 dictionary feature의 attribute와 origin feature를 함께 generator의 입력으로 주어, manipulated feature를 획득한 후, FIR을 수행하여, 유사 패션 아이템을 찾는다. 
 
