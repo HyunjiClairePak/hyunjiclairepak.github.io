@@ -82,23 +82,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="456">
+              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2020-10-03-samsung(4).md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="532">
+                <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2020-10-03-samsung(4).md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="513">
-                <caret line="27" column="87" selection-start-line="27" selection-start-column="87" selection-end-line="27" selection-end-column="87" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="96" column="44" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -109,18 +118,6 @@
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="515">
                 <caret line="33" column="90" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="90" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2020-07-30-20springkakaoprob(2).md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="304">
-                <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="17" selection-end-column="1" />
               </first_editor>
               <second_editor />
             </state>
@@ -139,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>research inter</find>
       <find>remote</find>
       <find>resear</find>
       <find>computer</find>
@@ -169,6 +165,7 @@
       <find>layout:</find>
       <find>disq</find>
       <find>양</find>
+      <find>bio.jp</find>
     </findStrings>
     <dirStrings>
       <dir>D:\github_blog\hyunjiellenpak.github.io\_includes</dir>
@@ -202,7 +199,6 @@
         <option value="$PROJECT_DIR$/_posts/2020-07-30-20springkakaoprob(2).md" />
         <option value="$PROJECT_DIR$/_posts/2020-07-28-batchnormalization.md" />
         <option value="$PROJECT_DIR$/_layouts/posts.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_includes/comments-providers/disqus.html" />
         <option value="$PROJECT_DIR$/../minimal-mistakes-master/minimal-mistakes-master/_includes/comments-providers/disqus.html" />
         <option value="$PROJECT_DIR$/_posts/2020-08-19-CalibrationPaper.md" />
@@ -217,8 +213,9 @@
         <option value="$PROJECT_DIR$/_posts/2020-09-16-cascade-retinanet.md" />
         <option value="$PROJECT_DIR$/_posts/2020-09-24-defect-detection(4).md" />
         <option value="$PROJECT_DIR$/_posts/2020-10-03-samsung_(3).md" />
-        <option value="$PROJECT_DIR$/_posts/2020-10-03-samsung(4).md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_posts/2020-10-03-samsung(4).md" />
       </list>
     </option>
   </component>
@@ -483,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2020-08-19-CalibrationPaper.md" />
     <entry file="file://$PROJECT_DIR$/_posts/2020-07-26-20springkakaoprob(1).md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -635,20 +625,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2020-10-03-samsung(4).md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="513">
-            <caret line="27" column="87" selection-start-line="27" selection-start-column="87" selection-end-line="27" selection-end-column="87" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="298">
+          <caret line="96" column="44" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2020-10-03-samsung(4).md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="532">
+            <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
