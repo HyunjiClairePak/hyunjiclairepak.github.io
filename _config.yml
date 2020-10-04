@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Hyunji Pak"
-  avatar           : "/assets/images/bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Current: Deep-Learning-based Model Development for Defect Detection using Fab Images"
   location         : "Korea"
   email            :
