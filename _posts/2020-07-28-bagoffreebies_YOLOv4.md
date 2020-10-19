@@ -24,7 +24,7 @@ Bag of Freebies는 YOLO v4 논문에 나온 용어인데, Object Detection 에�
  손실함수 변경, Data Augmentation등의 Data Generation방법이나 학습 방법을 변경하여 모델의 정확도를 올릴 수 있는 기법들을 의미합니다. 
  
  YOLO v4 논문에서는 다양한 Bag of Freebies에 대한 성능 실험을 하였고 실험을 통해 보편적인 데이터셋에서도 우수한 성능을 내는 것으로 증명된 몇가지를 YOLO v4 모델의 구성에 포함하였습니다. 아래 그림은 논문에 나온 YOLO v4에 사용된 BoF기법입니다.
- <center><img src="/assets/images/bagoffreebies.png" width="300" height="350"></center> 
+ <center><img src="/assets/images/bagoffreebies.PNG" width="300" height="350"></center> 
  
  이중에서 제가 Object Detection 관련 프로젝트를 하면서 RetinaNet의 정확도를 높이기 위해 실험해보았던 것들과 실험 결과에 대해 소개하도록 하겠습니다.     
    
