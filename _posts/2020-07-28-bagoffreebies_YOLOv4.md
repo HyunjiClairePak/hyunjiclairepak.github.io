@@ -11,7 +11,7 @@ toc: False
 ---
 안녕하세요. 오늘은 State-of-the-art Object Detection 논문인 **"YOLO v4: Optimal Speed and Accuracy of Object Detection"** 논문에 나오는 Bag of Freebies 용어와 이 기법들에 대해 알아보려고 합니다. 
 
-제가 Object Detection 관련 프로젝트를 수행하면서, 학습이 끝난 모델을 평가 할 때, 모델이 예측한 박스가 A 클래스일 확률(P<sub>a</sub>)에 대해 thresholding하는 threshold값에 따라서 모델의 정확도(=예측 결과를 confusion matrix로 나타낸 후, 계산한 \frac{옳게 예측한 수}{전체 모수의 비})가 조금씩 달라집니다. 
+제가 Object Detection 관련 프로젝트를 수행하면서, 학습이 끝난 모델을 평가 할 때, 모델이 예측한 박스가 A 클래스일 확률(P<sub>a</sub>)에 대해 thresholding하는 threshold값에 따라서 모델의 정확도(=예측 결과를 confusion matrix로 나타낸 후, 계산한 옳게 예측한 수 대비 전체 모수의 비가 조금씩 달라집니다. 
 대체적으로 threshold가 작을 수록 물체를 못찾는 비율(미검율)이 줄어들고, 물체를 과도하게 검출하는 경향을 보입니다. 따라서 학습이 잘된 모델일 수록 모델이 A 물체를 1.0에 가까운 확률로 A물체라고 예측하게 되므로, threshold값에 따라서 모델의 정확도에 변화가 크지 않습니다.
 
 그러나 제가 학습했던 ResNet50 + Feature Pyramid Network 기반의 RetinaNet모델이 이 score threshold값에 따라서 모델 정확도 차이가 크게는 7%정도 발생하였습니다. 그래서 저는 모델을 보다 안정적으로 학습하게 할 방법이 무엇이 있을지에 대해 찾아보다가 이 YOLO v4논문에서 모델 구조 변경없이 
@@ -54,7 +54,7 @@ Smoothing Factor를 0.01, 0.05, 0.1로 두고 실험을 해보았으나, smoothi
  특히 score threshold에 따른 모델의 정확도 변화가 줄어듦을 확인하여 모델이 L1손실함수를 사용하였을 때보다 A 불량에 대해 예측할 때, A불량이라고 더 확신을 갖고 예측한다는 것을 확인할 수 있었습니다. 이는 DIOU Loss함수가 Scale invariant하기에 다양한 크기의 물체에 대해 균일한 학습이 이루어질 수 있어서 모델의 정확도가 향상되었음을 의미합니다.         
 
  아래는 제가 RetinaNet에 DIOU Loss와 Label Smoothing을 적용해본 코드 링크입니다.
-> [https://github.com/HyunjiEllenPak/keras-retinanet]
+> [코드 링크](https://github.com/HyunjiEllenPak/keras-retinanet)
 
 결론 
 ==============
