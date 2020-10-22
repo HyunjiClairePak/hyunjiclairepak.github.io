@@ -4,7 +4,7 @@ main:
     url: "/dltech/"
   - title: "Algorithm Review"
     url: "/algorithm/"
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "SW Development"
+    url: "/sw_develop/"
   # - title: "Sitemap"
   #   url: /sitemap/
