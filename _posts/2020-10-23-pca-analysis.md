@@ -35,7 +35,7 @@ PCA로 데이터 차원을 축소시키면, 모델의 학습속도를 빠르게 
 데이터가 x 변수 하나로 이루어진 경우와 (x,y,z) 세가지 변수로 이루어진 경우를 생각해봅시다. 먼저 데이터가 x변수 하나로 이루어진 경우에는 불량/정상 분류를 위해서는 x 에 대한 분류선 하나가 필요하므로, 분류선을 기준으로 서로 반대편에 있는 2개의 데이터가 필요합니다. 
 반면에 데이터가 (x,y,z) 3개의 변수로 구성된 경우에는 불량/정상 분류를 위해서 x,y,z축 각각에 대한 분류선이 필요하므로, 최소 8개의 데이터가 필요합니다. 
 (아래 그림 1 참고)
-<center><img src="/assets/images/curseofdimensionex.PNG" width="500" height="280"></center>
+<center><img src="/assets/images/curseofdimensionex.png" width="500" height="280"></center>
 
 따라서 데이터가 부족한 경우 데이터의 차원을 축소시키는 것이 학습에 도움이 될 수 있습니다.
  데이터의 차원을 축소시키는 방법 중 하나인 PCA에 대해 알아보겠습니다. 
@@ -82,5 +82,5 @@ Registration의 기준이 되는 데이터를 reference 데이터, 움직일 데
     그 다음에는 Iterative Closest Point(ICP)알고리즘을 사용하여, point cloud의 point 각각의 위치를 일치시키는 fine registration을 수행합니다. 
 
 아래 그림 2는 정합 전 모습과 초기 정합, 정밀 정합 결과를 보여줍니다.  
-<center><img src="/assets/images/registrationex.PNG" width="700" height="450"></center>      
+<center><img src="/assets/images/registrationex.png" width="700" height="450"></center>      
          
