@@ -1,7 +1,7 @@
 ---
 title: Cuda Programming 소개 - Image Noise Reduction Filter(ADF)구현 예제 
 categories:
-    - sw_dev
+    - swdev
 date: 2020-10-23 00:00:00 +0900
 tags: 
     - Cuda Programming
@@ -62,12 +62,14 @@ GPU 프로그래밍은 다음과 같은 순서로 구현되어야 합니다.
 ==============================================================
 그러면 이제 제가 작성했던 CUDA기반 GPU프로그래밍 코드를 소개하겠습니다. 
 CT 이미지를 분석하기 전, 노이즈 제거를 위한 Anisotropic Diffusion Filter를 구현한 코드입니다.
+> 608 x 608 이미지 한장에 대해 ADF필터링을 20회 반복하였을 때 10 ms가 소요되었습니다. 
+
 <script src="https://gist.github.com/HyunjiEllenPak/c5d7f724ffda2ea538526b9335d0fa4a.js"></script>
 <script src="https://gist.github.com/HyunjiEllenPak/03e86e3b5035ab6f97f050f8f87438a9.js"></script>
 
-> ADF의 동작 원리 및 효과에 대한 설명은 아래 자료를 참고하시길 바랍니다.  
-> - [ADF 파라미터 설명에 관한 논문](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.449.948&rep=rep1&type=pdf)
+> ADF의 동작 원리 및 효과에 대한 설명은 아래 자료를 참고하시길 바랍니다.
 > - [Anisotropic Diffusion에 관한 논문](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=56205&casa_token=lGMbZUwyg_QAAAAA:wet0FAPlNt9xRuL_x0MvFr7C1amNUYUO1mJRa903go2muPZLHoxmtRnmpr3HVWBO6N8pZGfSC0Q&tag=1)
+> - [ADF 파라미터에 관한 논문](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.449.948&rep=rep1&type=pdf)
 > - [ADF 필터의 이미지 노이즈 제거 효과에 대한 논문](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6008370&casa_token=iVcIZeAqTaMAAAAA:50L4ICOMYNkwSSYtdrv5daDC4rUA9OQj6fdN6hT87Bkqhw6i4tOFgi2JzwX7khGM24ql8Mg_WnI)
 
     
