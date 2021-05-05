@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "default" # "air", "aqua", "contrast", "d
 locale                   : "ko-KR"
 title                    : "AI Research Engineer"
 title_separator          : "-"
-subtitle                 : "Computer Vision and Deep Learning" # site tagline that appears below site title in masthead
+subtitle                 : "A Blog Created to Love Programming." # site tagline that appears below site title in masthead
 name                     : "Hyunji Pak"
 description              : "Developer"
 url                      : "https://hyunjiellenpak.github.io"

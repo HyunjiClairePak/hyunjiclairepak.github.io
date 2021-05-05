@@ -1,13 +1,10 @@
 ---
 title: 데이터 차원 축소를 위한 PCA(주성분 분석) 기법과 사용 예제
+layout: post
 categories:
-    - swdev
+    - DL tech
 date: 2020-10-23 18:00:00 +0900
-tags: 
-    - Data Analysis
-    - Dimension Reduction 
-    - PCA 
-    - Principal Component Analysis
+tags: [Machine Learning]
 use_math: true    
 comments: true
 toc: False
@@ -63,23 +60,25 @@ maximize \space Var[\vec{X}\cdot\vec{e}]
 C\vec{e}=\lambda\vec{e}
 \end{align}
 
-여기서 $\vec{e}$는 공분산 $C$ 의 고유벡터, $\lambda$ 는 $C$의 고유값을 의미합니다.
-이 고유벡터 $\vec{e}$의 열 벡터들이 $X$의 주축을 나타냅니다.  
-$X$의 차원 수만큼의 고유값이 구해지는데, 고유값 \lambda_1을 $(C - \lambda) X = 0$ 에 대입했을 때, 계산되는 $\vec{e}$ 값이 고유값 $\lambda_1$에 해당하는 고유벡터입니다.  
-가장 큰 고유값에 해당하는 고유벡터가 $X$의 가장 중요한 주축을 의미합니다.  
+여기서 $\vec{e}$는 공분산 $C$ 의 고유벡터, $\lambda$ 는 $C$의 고유값을 의미합니다. 이 고유벡터 $\vec{e}$의 열 벡터들이 $X$의 주축을 나타냅니다.  
+$X$의 차원 수만큼의 고유값이 구해지는데, 고유값 $\lambda_1$을 $(C - \lambda)\vec{e} = 0$ 에 대입했을 때, 계산되는 $\vec{e}$ 값이 고유값 $\lambda_1$에 해당하는 고유벡터입니다. 가장 큰 고유값에 해당하는 고유벡터가 $X$의 가장 중요한 주축을 의미합니다. 고유벡터와 고유값의 의미에 대한 이해가 필요하신 분은 [위 사이트](https://blog.naver.com/je1206/220818602286)를 참고하시면 됩니다. 
+단계적으로 친절하게 설명해놓으셨습니다.
 
+제가 PCA의 원리를 공부하면서, 궁금했던 것이 있는데, 아직 이에 대한 답을 생각해내지 못하였습니다.
+PCA를 수행하기 전, 데이터 변수 값 별로 평균을 0으로 만드는 zero-centering 을 하는데, 이것을 왜 수행하는 것인지...? 
+뉴럴넷 학습전 데이터를 zero mean, one varaiance로 data normalization을 해주는 이유와 비슷한 이유일까요..?  아시는 분 답변 부탁드립니다..
 
-고유벡터와 고유값의 의미에 대한 이해가 필요하신 분은 [위 사이트](https://blog.naver.com/je1206/220818602286)를 참고하시면 됩니다. 
-단계적으로 친절하게 설명해놓으셨습니다ㅎㅎ
-
-제가 PCA의 원리를 공부하면서, 궁금했던 것이 있는데, 아직 이에 대한 답을 생각해내지 못하였습니다. 
-혹시 제 글을 보시고 답을 아시는 분은 댓글 남겨주시면 감사하겠습니다.
-PCA를 수행하기 전, 데이터 변수 값 별로 평균을 0으로 만드는 zero-centering 을 하는데, 이것을 왜 수행하는 것인지...?
-
-이러한 zero-centering 데이터 전처리를 딥러닝 뉴럴넷 학습에서도 활용하는데, 
-이때는 데이터 zero-centering을 안해주면, 입력값이 positive인 경우 $\vec{W}=(w_1,w_2)$ 업데이트 시, $w_1$이 양의 방향, $w_2$가 음의 방향으로 업데이트 되어야 하는 경우, 
+참고
+-------
+뉴럴넷 gradient 기반의 학습에서 data normalization을 해주는 이유는 두가지로 생각해볼 수 있습니다. 
+첫번째 이유는 데이터가 정규화되어있지 않은 상태에서 Gradient descent 기반의 학습을 하게 되면 데이터 변수 별로 range가 다른 상태인데, weight update시 사용하는 learning rate는 모든 weight에 대해 동일한 값을 사용하므로
+\vec{W}의 각 요소 들이 update되는 크기가 천차만별이 되어서 gradient descent로 최적 값 찾아가는 과정에서 overshooting이 발생할 수 있습니다. 
+그러면 weight가 최적값으로 최단 경로로 이동하지 못하고 지그재그로 이동을 하게 되므로 학습이 비효율적으로 진행됩니다.   
+ 
+두번째 이유는 앞의 내용에 포함되는 내용인데, 데이터 zero-centering을 안해주면, 입력값이 positive인 경우 $\vec{W}=(w_1,w_2)$ 업데이트 시, $w_1$이 양의 방향, $w_2$가 음의 방향으로 업데이트 되어야 하는 경우, 
 $w_1$과 $w_2$가 모두 positive 또는 negative 방향으로 밖에 업데이트가 안되기 때문에 
-한번 업데이트로는 원하는 방향으로 이동을 못하고 여러번 업데이트를 통해 이동을 해야하는 문제가 발생하기 때문입니다. 
+한번 업데이트로는 원하는 방향으로 이동을 못하고 여러번 업데이트를 통해 이동을 해야하는 문제가 발생하기 때문에 zero-centering을 수행합니다. 
+
 
  PCA 기법 사용 예제 - C/C++ pcl 라이브러리를 사용한 STL Registation 
 =========================================================================== 
@@ -95,7 +94,7 @@ Registration의 기준이 되는 데이터를 reference 데이터, 움직일 데
     이렇게 하면 reference와 floating데이터의 point cloud주축을 일치시키는 initial registration이 끝났습니다.
     그 다음에는 Iterative Closest Point(ICP)알고리즘을 사용하여, point cloud의 point 각각의 위치를 일치시키는 fine registration을 수행합니다. 
 
-Regisration 코드는 위 [사이트](https://github.com/HyunjiEllenPak/Point-Cloud-Registration)에 올려놓았습니다. 
+Regisration 코드는 위 [사이트](https://github.com/HyunjiClairePak/Point-Cloud-Registration)에 올려놓았습니다. 
 그림 2에서 정합 전 모습과 초기 정합, 정밀 정합 결과를 확인할 수 있습니다.  
 <center><img src="/assets/images/registrationex.png" width="700" height="450"></center>      
  
