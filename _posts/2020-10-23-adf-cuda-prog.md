@@ -1,13 +1,10 @@
 ---
-title: Cuda Programming 소개 - Image Noise Reduction Filter(ADF)구현 예제 
+title: Cuda Programming 소개 - Image Noise Reduction Filter(ADF)구현 예제
 categories:
     - swdev
 date: 2020-10-23 00:00:00 +0900
-tags: 
-    - Cuda Programming
-    - Medical Imaging 
-    - Image Noise Reduction
-    - Noise Filter 
+tags: [Medical Imaging, Image Processing]
+    
 comments: true
 toc: False
 ---
@@ -64,8 +61,8 @@ GPU 프로그래밍은 다음과 같은 순서로 구현되어야 합니다.
 CT 이미지를 분석하기 전, 노이즈 제거를 위한 Anisotropic Diffusion Filter를 구현한 코드입니다.
 > 608 x 608 이미지 한장에 대해 ADF필터링을 20회 반복하였을 때 10 ms가 소요되었습니다. 
 
-<script src="https://gist.github.com/HyunjiEllenPak/c5d7f724ffda2ea538526b9335d0fa4a.js"></script>
-<script src="https://gist.github.com/HyunjiEllenPak/03e86e3b5035ab6f97f050f8f87438a9.js"></script>
+<script src="https://gist.github.com/HyunjiClairePak/c5d7f724ffda2ea538526b9335d0fa4a.js"></script>
+<script src="https://gist.github.com/HyunjiClairePak/03e86e3b5035ab6f97f050f8f87438a9.js"></script>
 
 > ADF의 동작 원리 및 효과에 대한 설명은 아래 자료를 참고하시길 바랍니다.
 > - [Anisotropic Diffusion에 관한 논문](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=56205&casa_token=lGMbZUwyg_QAAAAA:wet0FAPlNt9xRuL_x0MvFr7C1amNUYUO1mJRa903go2muPZLHoxmtRnmpr3HVWBO6N8pZGfSC0Q&tag=1)

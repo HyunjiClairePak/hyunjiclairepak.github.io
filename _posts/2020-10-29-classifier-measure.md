@@ -1,11 +1,9 @@
 ---
-title: Classification Model 성능 평가지표 - Precision, Recall, F-score, Accuracy, ROC curve, AUC, Lift Curve,... 
+title: Classification Model 성능 평가지표 - Precision, Recall, F-score, Accuracy, ROC curve, AUC, Lift Curve,...
 categories:
     - DL tech
 date: 2020-11-04 21:00:00 +0900
-tags: 
-    - Classification Model
-    - Machine Learning    
+tags: [Machine Learning]    
 comments: true
 use_math: true
 toc: False
@@ -35,10 +33,13 @@ Accuracy, Precision, Recall, F1-score, ROC-curve, AUC 가 있습니다.
 5. ROC curve
     - 확률값에 대한 threshold값 변화에 따라 그려진 true positive rate(sensitivity) - false positive rate(specificity)그래프를 말하며 커브가 좌상단에 붙어있을수록 성능이 좋은 모델임을 의미합니다
     - 여기서 말하는 threhold는 예를들어, 강아지 이진분류기에서 모델이 예측한 확률값에 대해 보통 0.5를 넘으면 강아지다라고 하는데, 이 값을 나타냅니다.
-
+    - Sensitivity= Recall
+    - Specifity = \frac{TN}{TN+FP}
+    
 6. AUC (Area Under Curve)
-    - precision-recall그래프에서 curve아래의 면적을 의미하며 최대값은 1이고 좋은 모델일 수록 1에 가까운 값을 나타냅니다. 
-
+    - precision-recall(PR)그래프나 ROC 그래프에서 curve아래의 면적을 의미합니다. 최대값은 1이고 좋은 모델일 수록 1에 가까운 값을 나타냅니다.
+    - PR그래프에서 AUC는 AP값을 나타냅니다.
+  
 7. Lift Curve(향상도 커브) 
     - Lift = $ \frac{P(B|A)}{P(B)} $ - 맨땅에 B일 확률 분에 A에도 해당되면서 B에도 해당될 확률의 비 
     > 위의 암환자 예시에서, Lift 값은 $\frac{모델이 환자라고 분류한 것 중에서 실제 암 환자의 비}{전체 데이터 중에서 암 환자의 비}$를

@@ -1,10 +1,8 @@
 # main links
 main:
-  - title: "Deep-Learning Review"
+  - title: "Machine Learning"
     url: "/dltech/"
-  - title: "Algorithm Review"
+  - title: "Coding Test"
     url: "/algorithm/"
-  - title: "SW Development"
+  - title: "SW Technique"
     url: "/swdev/"
-  # - title: "Sitemap"
-  #   url: /sitemap/

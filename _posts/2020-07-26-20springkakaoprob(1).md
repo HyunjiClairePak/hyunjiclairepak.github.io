@@ -3,9 +3,7 @@ title: 카카오 20상반기 인턴 코테 풀이(1) - 키패드 누르기
 categories:
     - algorithm
 date: 2020-07-20 23:47:00 +0900
-tags: 
-    - Algorithm
-    - Kakao        
+tags: [Algorithm, Kakao]        
 comments: true
 toc: False
 ---
@@ -30,4 +28,4 @@ toc: False
 
 -  사용 언어: C++
 
-<script src="https://gist.github.com/HyunjiEllenPak/1af6f0f1e3da62df930412dbdacb4863.js"></script>
+<script src="https://gist.github.com/HyunjiClairePak/1af6f0f1e3da62df930412dbdacb4863.js"></script>
