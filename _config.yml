@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "AI Research Engineer"
 title_separator          : "-"
 subtitle                 : "A Blog Created to Love Programming." # site tagline that appears below site title in masthead
-name                     : "Hyunji Pak"
+name                     : "Claire Pak"
 description              : "Developer"
 url                      : "https://hyunjiclairepak.github.io"
 baseurl                  : ""
@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : disqus # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : HyunjiClairePak # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : Claire # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -93,7 +93,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Hyunji Pak"
+  name             : "Claire Pak"
   avatar           : "/assets/images/bio.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Deep Learning & Computer Vision"
   location         : "Korea"
@@ -102,9 +102,9 @@ author:
 #    - label: "Email"
 #      icon: "fas fa-fw fa-envelope-square"
 #      url: "hyunjipak0617@gmail.com"
-    - label: "Linkedin"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.linkedin.com/in/%ED%98%84%EC%A7%80-%EB%B0%95-0ab4b31a6/"
+#    - label: "Linkedin"
+#      icon: "fas fa-fw fa-link"
+#      url: "https://www.linkedin.com/in/%ED%98%84%EC%A7%80-%EB%B0%95-0ab4b31a6/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/HyunjiClairePak"
