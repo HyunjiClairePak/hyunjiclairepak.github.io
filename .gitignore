@@ -27,13 +27,7 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
-/_posts/2020-08-31-weakly_supervised_generative_paper.md
-/_posts/2020-08-31-EfficientDet.md
-/_posts/2020-07-30-18kakao_game.md
-/_posts/2020-09-16-cascade-retinanet.md
-/_posts/2020-09-24-defect-detection(4).md
-/_posts/2020-09-23-defect_detection(1).md
-/_posts/2020-09-23-naver-papago(1).md
+/_drafts/*
 /assets/images/patternimage.png
 /assets/images/visdrone_sampleimage.png
 /assets/images/bio.jpg
