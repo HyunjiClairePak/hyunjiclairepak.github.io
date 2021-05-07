@@ -1,5 +1,6 @@
 ---
 title: Object Detection 성능향상을 위한 Bag of Freebies 기법 - YOLOv4
+layout: post
 categories:
     - DL tech
 date: 2020-07-28 21:00:00 +0900

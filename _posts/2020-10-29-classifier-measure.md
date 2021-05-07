@@ -1,5 +1,6 @@
 ---
 title: Classification Model 성능 평가지표 - Precision, Recall, F-score, Accuracy, ROC curve, AUC, Lift Curve,...
+layout: post 
 categories:
     - DL tech
 date: 2020-11-04 21:00:00 +0900

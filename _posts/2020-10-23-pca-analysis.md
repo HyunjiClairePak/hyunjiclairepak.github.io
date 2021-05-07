@@ -1,5 +1,6 @@
 ---
 title: 데이터 차원 축소를 위한 PCA(주성분 분석) 기법과 사용 예제
+layout: post
 categories:
     - DL tech
 date: 2020-10-23 18:00:00 +0900

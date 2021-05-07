@@ -1,5 +1,6 @@
 ---
 title: 카카오 20상반기 인턴 코테 풀이(1) - 키패드 누르기
+layout: post
 categories:
     - algorithm
 date: 2020-07-20 23:47:00 +0900
