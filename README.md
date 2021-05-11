@@ -1,6 +1,6 @@
 Dev. Personal Blog.
 --------------------
-"**minimal-mistakes**" 테마로 제작한 Claire Pak의 개인 블로그 입니다. 
+"**minimal-mistakes**" 테마로 제작한 개인 블로그 입니다. 
   
 
 How to test a new post.
