@@ -52,7 +52,7 @@ Smoothing Factor를 0.01, 0.05, 0.1로 두고 실험을 해보았으나, smoothi
  특히 score threshold에 따른 모델의 정확도 변화가 줄어듦을 확인하여 모델이 L1손실함수를 사용하였을 때보다 A 불량에 대해 예측할 때, A불량이라고 더 확신을 갖고 예측한다는 것을 확인할 수 있었습니다. 이는 DIOU Loss함수가 Scale invariant하기에 다양한 크기의 물체에 대해 균일한 학습이 이루어질 수 있어서 모델의 정확도가 향상되었음을 의미합니다.         
 
  아래는 제가 RetinaNet에 DIOU Loss와 Label Smoothing을 적용해본 코드 링크입니다.
-> [코드 링크](https://github.com/HyunjiClairePak/keras-retinanet)
+> [코드 링크](https://github.com/HyunjiEllenPak/keras-retinanet)
 
 결론 
 ==============

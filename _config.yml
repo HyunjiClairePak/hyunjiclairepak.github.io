@@ -21,9 +21,9 @@ title_separator          : "-"
 subtitle                 : "A Blog Created to Love Programming." # site tagline that appears below site title in masthead
 name                     : "Claire Pak"
 description              : "Developer"
-url                      : "https://hyunjiclairepak.github.io"
+url                      : "https://hyunjiellenpak.github.io"
 baseurl                  : ""
-repository               : "HyunjiClairePak/hyunjiclairepak.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "HyunjiEllenPak/hyunjiellenpak.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -107,7 +107,7 @@ author:
 #      url: "https://www.linkedin.com/in/%ED%98%84%EC%A7%80-%EB%B0%95-0ab4b31a6/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/HyunjiClairePak"
+      url: "https://github.com/HyunjiEllenPak"
 
 # Site Footer
 #footer:
