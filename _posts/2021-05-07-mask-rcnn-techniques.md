@@ -29,8 +29,8 @@ Fig1에서 (b)와 (c)는 4x4 ROI를 1X1 Vector로 만들기 위해 ROI Pooling�
 
 
  
- References
- -------
+ References.
+ -----------
  - [Fast RCNN논문](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf)
  - [Faster RCNN 논문](https://proceedings.neurips.cc/paper/2015/file/14bfa6bb14875e45bba028a21ed38046-Paper.pdf)
  - [Mask RCNN 논문](https://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf)

@@ -28,4 +28,4 @@ toc: False
 
 -  사용 언어: C++
 
-<script src="https://gist.github.com/HyunjiClairePak/1af6f0f1e3da62df930412dbdacb4863.js"></script>
+<script src="https://gist.github.com/HyunjiEllenPak/1af6f0f1e3da62df930412dbdacb4863.js"></script>

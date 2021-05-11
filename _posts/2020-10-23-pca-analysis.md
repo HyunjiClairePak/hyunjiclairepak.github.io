@@ -31,7 +31,7 @@ PCA로 데이터 차원을 축소시키면, 모델의 학습속도를 빠르게 
 데이터가 x 변수 하나로 이루어진 경우와 (x,y,z) 세가지 변수로 이루어진 경우를 생각해봅시다. 먼저 데이터가 x변수 하나로 이루어진 경우에는 불량/정상 분류를 위해서는 x 에 대한 분류선 하나가 필요하므로, 분류선을 기준으로 서로 반대편에 있는 2개의 데이터가 필요합니다. 
 반면에 데이터가 (x,y,z) 3개의 변수로 구성된 경우에는 불량/정상 분류를 위해서 x,y,z축 각각에 대한 분류선이 필요하므로, 최소 8개의 데이터가 필요합니다. 
 (아래 그림 1 참고)
-<center><img src="/assets/images/curseofdimensionex.png" width="500" height="280"></center>
+<center><img src="/assets/images/curseofdimensionex_.png" width="500" height="280"></center>
 
 
 따라서 데이터가 부족한 경우 데이터의 차원을 축소시키는 것이 학습에 도움이 될 수 있습니다.
@@ -93,13 +93,13 @@ Registration의 기준이 되는 데이터를 reference 데이터, 움직일 데
     이렇게 하면 reference와 floating데이터의 point cloud주축을 일치시키는 initial registration이 끝났습니다.
     그 다음에는 Iterative Closest Point(ICP)알고리즘을 사용하여, point cloud의 point 각각의 위치를 일치시키는 fine registration을 수행합니다. 
 
-Regisration 코드는 위 [사이트](https://github.com/HyunjiClairePak/Point-Cloud-Registration)에 올려놓았습니다. 
+Regisration 코드는 위 [사이트](https://github.com/HyunjiEllenPak/Point-Cloud-Registration)에 올려놓았습니다. 
 그림 2에서 정합 전 모습과 초기 정합, 정밀 정합 결과를 확인할 수 있습니다.  
-<center><img src="/assets/images/registrationex.png" width="700" height="450"></center>      
+<center><img src="/assets/images/registrationex_.png" width="700" height="450"></center>      
  
 결론 
 ================
-오늘은 PCA의 원리와 사용예제에 대해 알아보았습니다.
+오늘은 PCA의 원리와 사용예제에 대해 알아보았습니다.e
 PCA는 데이터의 분산을 최대화하는 주축을 찾아주는 알고리즘으로 데이터의 차원을 축소시키는데 사용될 수 있음을 배웠습니다. 
 따라서 PCA는 SVM과 같은 머신러닝 분류기를 사용하기에 앞서 데이터 전처리방법으로 사용될 수 있습니다. 
 또한 PCA는 데이터의 주축을 찾아주기에, 두 Point cloud를 일치시키는 작업에서 초기 Registration방법으로 사용될 수도 있었습니다. 
